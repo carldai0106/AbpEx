@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>AbpEx.Web.Mvc</id>
+    <version>1.0.4</version>
+    <title>AbpEx.Web.Mvc</title>
+    <authors>Carl</authors>
+    <owners>Carl</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <iconUrl>http://i4.buimg.com/588926/1a7954066e635bfe.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Abp.Web.Mvc Extensions</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright carl 2017</copyright>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="AbpEx" version="1.0.4" />
+        <dependency id="Abp" version="2.0.2"  />
+        <dependency id="Abp.Web" version="2.0.2"  />
+        <dependency id="Abp.Web.Common" version="2.0.2"  />
+        <dependency id="Abp.Web.Mvc" version="2.0.2"  />           
+      </group>
+      <group targetFramework=".NETFramework4.5">       
+        <dependency id="Microsoft.AspNet.Mvc" version="5.2.3" />
+        <dependency id="Microsoft.AspNet.Razor" version="3.2.3"  />
+        <dependency id="Microsoft.AspNet.WebPages" version="3.2.3"  />
+        <dependency id="Microsoft.Web.Infrastructure" version="1.0.0.0"  />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>   
+    <file src="..\..\AbpEx.Web.Mvc\bin\Release\AbpEx.Web.Mvc.*" target="lib\net46\" />
+  </files>
+</package>

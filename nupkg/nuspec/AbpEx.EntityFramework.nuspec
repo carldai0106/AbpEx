@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AbpEx.EntityFramework</id>
+    <version>1.0.4.1</version>
+    <title>AbpEx.EntityFramework</title>
+    <authors>Carl</authors>
+    <owners>Carl</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <iconUrl>http://i4.buimg.com/588926/1a7954066e635bfe.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Abp.EntityFramework Extensions</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright carl 2017</copyright>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="AbpEx" version="1.0.4" />
+        <dependency id="Abp" version="2.0.2"  />
+        <dependency id="Abp.EntityFramework" version="2.0.2"  />
+        <dependency id="Abp.EntityFramework.Common" version="2.0.2"  />        
+      </group>     
+    </dependencies>
+    <references>
+      <reference file="EntityFramework.Extended.dll" />
+      <reference file="AbpEx.EntityFramework.dll" />
+    </references>
+  </metadata>
+  <files>
+    <file src="..\..\AbpEx.EntityFramework\bin\Release\EntityFramework.Extended.dll" target="lib\net46\EntityFramework.Extended.dll" />
+    <file src="..\..\AbpEx.EntityFramework\bin\Release\EntityFramework.Extended.dll.config" target="lib\net46\EntityFramework.Extended.dll.config" />
+    <file src="..\..\AbpEx.EntityFramework\bin\Release\EntityFramework.Extended.pdb" target="lib\net46\EntityFramework.Extended.pdb" />
+    <file src="..\..\AbpEx.EntityFramework\bin\Release\AbpEx.EntityFramework.dll" target="lib\net46\AbpEx.EntityFramework.dll" />
+    <file src="..\..\AbpEx.EntityFramework\bin\Release\AbpEx.EntityFramework.dll.config" target="lib\net46\AbpEx.EntityFramework.dll.config" />
+    <file src="..\..\AbpEx.EntityFramework\bin\Release\AbpEx.EntityFramework.pdb" target="lib\net46\AbpEx.EntityFramework.pdb" />
+  </files>
+</package>

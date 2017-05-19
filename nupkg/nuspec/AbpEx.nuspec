@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>AbpEx</id>
+    <version>1.0.4</version>
+    <title>AbpEx</title>
+    <authors>Carl</authors>
+    <owners>Carl</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>    
+    <iconUrl>http://i4.buimg.com/588926/1a7954066e635bfe.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Abp Extensions</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright carl 2017</copyright>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6">       
+        <dependency id="Abp" version="2.0.2"  />            
+      </group>     
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\AbpEx\bin\Release\AbpEx.*" target="lib\net46\Release" />    
+  </files>
+</package>

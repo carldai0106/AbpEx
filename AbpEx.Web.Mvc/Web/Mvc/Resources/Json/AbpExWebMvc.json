@@ -1,0 +1,7 @@
+﻿{
+    "culture": "en",
+    "texts": {
+      "NumericModelValidator": "The numeric is invalid.",
+      "PleaseSelectOne": "Please select one"
+    }
+}

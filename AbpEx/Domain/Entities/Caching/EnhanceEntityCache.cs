@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Abp.Domain.Repositories;
@@ -45,7 +44,18 @@ namespace Abp.Domain.Entities.Caching
 
         public virtual void HandleEvent(EntityChangedEventData<TEntity> eventData)
         {
-            throw new NotImplementedException();
+            var id = eventData.Entity.Id;
+            var cacheItem = Get(id);
+            var list = GetList();
+            list.Remove(cacheItem);
+
+            var item = Repository.FirstOrDefault(id);
+            if (item != null)
+            {
+                var items = MapToCacheItems(new List<TEntity> { item });
+                var mappedItem = items.FirstOrDefault();
+                list.Add(mappedItem);
+            }
         }
 
         public virtual TCacheItem Get(TPrimaryKey id)

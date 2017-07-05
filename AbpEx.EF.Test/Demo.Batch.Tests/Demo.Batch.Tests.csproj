@@ -164,6 +164,7 @@
     <Compile Include="BatchTestBase.cs" />
     <Compile Include="BatchTestModule.cs" />
     <Compile Include="Customers\CustomerAppService_Tests.cs" />
+    <Compile Include="Others\Other_Tests.cs" />
     <Compile Include="PriorityOrderer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestPriorityAttribute.cs" />
